@@ -1,0 +1,199 @@
+{
+  "id": "1b24e8a6-09e8-4f5e-91fc-e05b8b204b61",
+  "version": "2.0",
+  "name": "ContosoSite",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "9dfbf143-0827-4d70-b375-93d0aaae09df",
+    "name": "DELETE",
+    "commands": [{
+      "id": "b0ba00ae-ef73-40fe-8e51-6a66f916fb7d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51fe9cb8-c3b4-4c0e-afe9-fec57ee9bac0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6127cbd-c55f-4311-8f7b-898dd265147b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-3:nth-child(13) img",
+      "targets": [
+        ["css=.mt-3:nth-child(13) img", "css:finder"],
+        ["xpath=//img[@alt='описание']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div[13]/div/img", "xpath:idRelative"],
+        ["xpath=//div[13]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31a60819-9d6a-4af7-b233-6da689913b41",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9570c69a-85a6-4110-b627-443938de1e73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/nav/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Панель Администратора')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14cb4774-d000-4900-9ef2-0d4ca31f5381",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4:nth-child(3)",
+      "targets": [
+        ["css=.mt-4:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Удалить запись')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "471fc79b-5e25-4e7a-bde5-86540fa55557",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-3",
+      "targets": [
+        ["css=.mt-3", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6a223db-53d4-49ff-a0be-202d678a4ede",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mt-3",
+      "targets": [
+        ["css=.mt-3", "css:finder"],
+        ["xpath=//input[@value='17']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "18"
+    }, {
+      "id": "21bcb02b-f9ae-466a-9ebe-a411ada37b06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-success",
+      "targets": [
+        ["css=.btn-outline-success", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8de5f17-a222-46a7-bbf3-74431a8b963f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-nav > .btn",
+      "targets": [
+        ["css=.navbar-nav > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/nav/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//nav/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Предоставляемые услуги')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dfabcae-afe5-4d7e-8d31-73384ad76f9f",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "33b64836-1a06-409a-bc38-c4d0404f8a06",
+    "name": "open service page",
+    "commands": [{
+      "id": "196a6086-4f8d-4366-a8e0-7b016341074a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c4c876d-3e9e-4050-8a04-1454ce381338",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7166035-9328-460f-8251-553712c9b1a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-3:nth-child(3) > .card > div > div",
+      "targets": [
+        ["css=.mt-3:nth-child(3) > .card > div > div", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bcea5b2-21c3-4527-ba69-5f3f35b28e8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-nav > .btn",
+      "targets": [
+        ["css=.navbar-nav > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/nav/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//nav/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Предоставляемые услуги')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11f52d7d-c04a-425b-9654-2d94d52db0bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-3:nth-child(7) > .card > div > div",
+      "targets": [
+        ["css=.mt-3:nth-child(7) > .card > div > div", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div[7]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cd91b42-6102-4c54-9ebb-d038f8283aff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-nav > .btn",
+      "targets": [
+        ["css=.navbar-nav > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/nav/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//nav/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Предоставляемые услуги')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ee4d6ccc-e4a8-4e2f-b9d1-c2c81429b92a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}

@@ -1,0 +1,45 @@
+import { expect } from 'chai';
+import request from 'supertest';
+import app from '../index.js';
+
+//Добавление записи
+describe('POST /api/service', function() {
+    it('responds with json', function(done) {
+        request(app)
+            .post('/api/service/')
+            .set('Accept', 'application/json')
+            .send({ Name: 'Кремация', 
+                    Cost: 55000, 
+                    Description: 'Сожжение человека в специальной печи', 
+                    Type: '1', 
+                    Img: "1df6b890-6ba2-4572-ad17-fc138c44c765.jpg"})
+            .expect('Content-Type', /json/)
+            .expect(200)
+            .end(function(err, res) {
+                if (err) return done(err);
+                expect(res.body.length).to.equal(3)
+                done();
+            });
+    });
+});
+
+//Удаление записи
+describe('POST /api/service/', function() {
+    it('responds with json', function(done) {
+        request(app)
+            .post('/api/service/')
+            .set('Accept', 'application/json')
+            .send({ ID_Service: 19})
+            .expect('Content-Type', /json/)
+            .expect(200)
+            .end(function(err, res) {
+                if (err) return done(err);
+                expect(res.body.length).to.equal(0)
+                done();
+            });
+    });
+});
+
+
+after(function() {
+});
